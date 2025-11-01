@@ -1,6 +1,7 @@
-import { ViewItem } from "reusablepool";
 import { ShortItem } from "../../model/model";
+import { ImageView } from "../image/ImageView";
 import { FooterState, ProfileViewModel } from "./ViewModel";
+import { promptAction } from "@kit.ArkUI"
 
 @ComponentV2
 export struct ProfileView {
@@ -61,14 +62,9 @@ export struct ProfileView {
               Stack() {
                 Column() {
                   // 注意：需要确保对应的jpg文件存在才会正常显示
-                  Image(item.cover)
-                    .objectFit(ImageFit.Cover)
-                    .width('100%')
-                    .layoutWeight(1)
-                    .borderRadius({
-                      topLeft: 8,
-                      topRight: 8,
-                    })
+                  ImageView({
+                    url: item.cover
+                  })
                 }
 
                 Column() {
@@ -86,14 +82,19 @@ export struct ProfileView {
                   .width("100%")
                   .backgroundColor("#ffffff")
                   .opacity(0.75)
-                }.width("100%")
+                }
+                .width("100%")
                 .height("100%")
                 .justifyContent(FlexAlign.End)
               }
-
             }
             .width('100%')
             .aspectRatio(this.vm.itemHeightArray[index % 100] / this.vm.itemWidthArray[index%100])
+            .onClick(() => {
+              promptAction.openToast({
+                message: "正在建设中..."
+              })
+            })
           }, (item: string) => item)
         }
         .columnsTemplate("1fr 1fr") // 设置2列等宽布局
