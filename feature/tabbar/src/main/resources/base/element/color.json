@@ -1,0 +1,24 @@
+{
+  "color": [
+    {
+      "name": "tab_text_selected",
+      "value": "#a0a0a0"
+    },
+    {
+      "name": "tab_text_normal",
+      "value": "#dfdfdf"
+    },
+    {
+      "name": "tab_icon_selected",
+      "value": "#a0a0a0"
+    },
+    {
+      "name": "tab_icon_normal",
+      "value": "#dfdfdf"
+    },
+    {
+      "name": "tab_icon_strong",
+      "value": "#ED955F"
+    }
+  ]
+}

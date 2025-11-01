@@ -1,0 +1,9 @@
+{
+  "module": {
+    "name": "faker",
+    "type": "har",
+    "deviceTypes": [
+      "default"
+    ]
+  }
+}

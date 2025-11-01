@@ -1,0 +1,40 @@
+{
+  "color": [
+    {
+      "name": "start_window_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "transition_animation_water_flow_background_color",
+      "value": "#cccccc"
+    },
+    {
+      "name": "home_top_category_item_text_color",
+      "value": "#c3c3c3"
+    },
+    {
+      "name": "home_top_category_item_text_active_color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "home_search_box_bg_color",
+      "value": "#F5F5F5"
+    },
+    {
+      "name": "home_top_category_item_active_bg_color",
+      "value": "#E0E0E0"
+    },
+    {
+      "name": "home_top_category_item_bg_color",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "primary_color",
+      "value": "#E87361"
+    },
+    {
+      "name": "short_list_water_flow_background_color",
+      "value": "#FAEEE0"
+    }
+  ]
+}

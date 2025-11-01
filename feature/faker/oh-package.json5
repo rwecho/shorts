@@ -1,0 +1,32 @@
+{
+  "name": "faker",
+  "version": "1.0.0",
+  "description": "A comprehensive fake data generator library for ArkTS/HarmonyOS development, similar to faker-js but with full ArkTS compliance and enhanced Unsplash integration.",
+  "main": "Index.ets",
+  "author": "HarmonyOS Developer",
+  "license": "MIT",
+  "keywords": [
+    "faker",
+    "fake data",
+    "mock data",
+    "test data",
+    "ArkTS",
+    "HarmonyOS",
+    "Unsplash",
+    "data generator",
+    "random data",
+    "Chinese data"
+  ],
+  "repository": "https://github.com/rwecho/shorts.git",
+  "homepage": "https://github.com/rwecho/shorts#readme",
+  "bugs": {
+    "url": "https://github.com/rwecho/shorts/issues"
+  },
+  "engines": {
+    "arkts": ">=4.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@ohos/hypium": "^1.0.18"
+  }
+}

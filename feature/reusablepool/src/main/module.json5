@@ -1,0 +1,9 @@
+{
+  "module": {
+    "name": "reusablepool",
+    "type": "har",
+    "deviceTypes": [
+      "default"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "string": [
+    {
+      "name": "page_show",
+      "value": "page from package"
+    },
+    {
+      "name": "tab_title_home",
+      "value": "首页"
+    },
+    {
+      "name": "tab_title_plus",
+      "value": ""
+    },
+    {
+      "name": "tab_title_profile",
+      "value": "我的"
+    }
+  ]
+}

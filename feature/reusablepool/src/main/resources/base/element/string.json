@@ -1,0 +1,20 @@
+{
+  "string": [
+    {
+      "name": "page_show",
+      "value": "page from package"
+    },
+    {
+      "name": "reusablepool_percent_100",
+      "value": "100%"
+    },
+    {
+      "name": "reusablepool_flow_item_comp_des_font_size",
+      "value": "14fp"
+    },
+    {
+      "name": "reusablepool_flow_item_comp_name_font_size",
+      "value": "16fp"
+    }
+  ]
+}

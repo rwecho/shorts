@@ -1,0 +1,9 @@
+{
+  "module": {
+    "name": "tabbar",
+    "type": "har",
+    "deviceTypes": [
+      "default"
+    ]
+  }
+}

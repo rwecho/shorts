@@ -1,0 +1,13 @@
+{
+  "integer": [
+    {
+      "name": "reusablepool_flow_item_comp_border_radius",
+      "value": 8
+    },
+
+    {
+      "name": "reusablepool_item_name_margin_top",
+      "value": 8
+    }
+  ]
+}
