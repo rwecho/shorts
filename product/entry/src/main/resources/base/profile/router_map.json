@@ -1,0 +1,20 @@
+{
+  "routerMap": [
+    {
+      "name": "pageOne",
+      "pageSourceFile": "src/main/ets/pages/PageOne.ets",
+      "buildFunction": "PageOneBuilder",
+      "data": {
+        "description": "this is pageOne"
+      }
+    },
+    {
+      "name": "shortPage",
+      "pageSourceFile": "src/main/ets/components/short/ShortPage.ets",
+      "buildFunction": "ShortPageBuilder",
+      "data": {
+        "description": "this is shortPage"
+      }
+    }
+  ]
+}

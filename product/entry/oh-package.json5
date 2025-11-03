@@ -9,7 +9,8 @@
     "utils": "file:../../feature/common/utils",
     "tabbar": "file:../../feature/tabbar",
     "reusablepool": "file:../../feature/reusablepool",
-    "faker": "file:../../feature/faker"
+    "faker": "file:../../feature/faker",
+    "router": "file:../../feature/router"
   }
 }
 

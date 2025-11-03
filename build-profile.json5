@@ -53,6 +53,10 @@
     {
       "name": "faker",
       "srcPath": "./feature/faker",
+    },
+    {
+      "name": "router",
+      "srcPath": "./feature/router",
     }
   ]
 }

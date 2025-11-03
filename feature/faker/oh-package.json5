@@ -1,6 +1,6 @@
 {
   "name": "faker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A comprehensive fake data generator library for ArkTS/HarmonyOS development, similar to faker-js but with full ArkTS compliance and enhanced Unsplash integration.",
   "main": "Index.ets",
   "author": "HarmonyOS Developer",
@@ -25,7 +25,6 @@
   "engines": {
     "arkts": ">=4.0.0"
   },
-  "dependencies": {},
   "devDependencies": {
     "@ohos/hypium": "^1.0.18"
   }

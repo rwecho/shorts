@@ -1,10 +1,10 @@
 import { ShortItem } from "../../model/model";
 import { ImageView } from "../image/ImageView";
-import { FooterState, ProfileViewModel } from "./ViewModel";
-import { promptAction } from "@kit.ArkUI"
+import { FooterState, ProfileViewModel } from "./ProfilePageViewModel";
+import { router } from "router"
 
 @ComponentV2
-export struct ProfileView {
+export struct ProfilePage {
   private vm: ProfileViewModel = new ProfileViewModel();
   private scroller: Scroller = new Scroller();
   @Local isRefreshing: boolean = false;
@@ -63,15 +63,34 @@ export struct ProfileView {
                 Column() {
                   // 注意：需要确保对应的jpg文件存在才会正常显示
                   ImageView({
-                    url: item.cover
+                    url: item.cover,
+                    imageRadius: {
+                      topLeft: 8,
+                      topRight: 8
+                    }
                   })
                 }
 
                 Column() {
                   Row() {
+                    if (item.author) {
+                      Text(item.author)
+                        .fontSize("8fp")
+                        .fontWeight(FontWeight.Medium)
+                        .alignSelf(ItemAlign.Start)
+                    }
+
                     Text(item.title)
                       .fontSize("10fp")
                       .fontWeight(FontWeight.Bold)
+                      .margin({
+                        left: 4,
+                        right: 4
+                      })
+                      .maxLines(2)
+                      .textOverflow({
+                        overflow: TextOverflow.Ellipsis
+                      })
                   }
                   .padding({
                     left: 8,
@@ -89,11 +108,12 @@ export struct ProfileView {
               }
             }
             .width('100%')
-            .aspectRatio(this.vm.itemHeightArray[index % 100] / this.vm.itemWidthArray[index%100])
+            .aspectRatio(this.vm.itemHeightArray[index % 100] / this.vm.itemWidthArray[index % 100])
             .onClick(() => {
-              promptAction.openToast({
-                message: "正在建设中..."
-              })
+              const parameters = new Object({
+                "hello world": "hello" + " world"
+              });
+              router.push("shortPage", parameters)
             })
           }, (item: string) => item)
         }

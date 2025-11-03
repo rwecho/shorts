@@ -1,6 +1,7 @@
 @ComponentV2
 export struct ImageView {
   @Require @Param url: string;
+  @Param imageRadius: Length | BorderRadiuses | LocalizedBorderRadiuses = 0;
   @Local loadingState: 'loading' | 'success' | 'error' = 'loading';
 
   build() {
@@ -10,10 +11,7 @@ export struct ImageView {
         .objectFit(ImageFit.Cover)
         .width("100%")
         .height("100%")
-        .borderRadius({
-          topLeft: 8,
-          topRight: 8
-        })
+        .borderRadius(this.imageRadius)
         .onComplete(() => {
           this.loadingState = 'success';
         })
@@ -31,13 +29,13 @@ export struct ImageView {
             .color('#c3c3c3')
         }
         .width("100%")
-          .height("100%")
-          .justifyContent(FlexAlign.Center)
-          .backgroundColor('#F5F5F5')
-          .borderRadius({
-            topLeft: 8,
-            topRight: 8
-          })
+        .height("100%")
+        .justifyContent(FlexAlign.Center)
+        .backgroundColor('#F5F5F5')
+        .borderRadius({
+          topLeft: 8,
+          topRight: 8
+        })
       }
 
       // 错误界面
@@ -51,19 +49,19 @@ export struct ImageView {
             .fontColor('#666666')
         }
         .width("100%")
-          .height("100%")
-          .justifyContent(FlexAlign.Center)
-          .backgroundColor('#F5F5F5')
-          .borderRadius({
-            topLeft: 8,
-            topRight: 8
-          })
-          .onClick(() => {
-            this.loadingState = 'loading';
-          })
+        .height("100%")
+        .justifyContent(FlexAlign.Center)
+        .backgroundColor('#F5F5F5')
+        .borderRadius({
+          topLeft: 8,
+          topRight: 8
+        })
+        .onClick(() => {
+          this.loadingState = 'loading';
+        })
       }
     }
     .width("100%")
-      .layoutWeight(1)
+    .layoutWeight(1)
   }
 }
