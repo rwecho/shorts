@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.1] - 2025-11-4
+
+### Fixed
+
+- Corrected typos in documentation
+
 ## [1.0.0] - 2025-10-31
 
 ### Added
@@ -14,17 +20,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Support for Chinese and English data generation
 - Comprehensive Unsplash image integration
 - Multiple data generators:
-  - **Name**: Chinese names, English names, titles
-  - **Address**: Chinese addresses, cities, districts, zip codes
-  - **Phone**: Mobile and landline phone numbers
-  - **Internet**: Email addresses, usernames, URLs, IP addresses, MAC addresses
-  - **Lorem**: Words, sentences, paragraphs with customizable length
-  - **DateTime**: Past/future dates, timestamps, date ranges
-  - **Numbers**: Integers, floats, percentages, currency formatting
-  - **Color**: Hex, RGB, RGBA color codes
-  - **Image**: Picsum integration and comprehensive Unsplash support
-  - **Commerce**: Product names, departments, pricing
-  - **Company**: Company names, suffixes, full company names
+- **Name**: Chinese names, English names, titles
+- **Address**: Chinese addresses, cities, districts, zip codes
+- **Phone**: Mobile and landline phone numbers
+- **Internet**: Email addresses, usernames, URLs, IP addresses, MAC addresses
+- **Lorem**: Words, sentences, paragraphs with customizable length
+- **DateTime**: Past/future dates, timestamps, date ranges
+- **Numbers**: Integers, floats, percentages, currency formatting
+- **Color**: Hex, RGB, RGBA color codes
+- **Image**: Picsum integration and comprehensive Unsplash support
+- **Commerce**: Product names, departments, pricing
+- **Company**: Company names, suffixes, full company names
 
 ### Unsplash Features
 
